@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5b;
+    color: #333333;
+    background-image: url(../imagens/bg-dia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+    background-image: url(../imagens/bg-noite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo, 
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header .pokemon {
+    width: 80px;
+    background: none;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover, 
+header .imagem-botao:hover,
+main .cartao-pokemon:hover, 
+header .pokemon:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96e9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #447094;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.tipo-veneno {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #df67ddfb;
+}
+
+.tipo-fogo {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #ee8130;
+}
+
+.tipo-agua {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #6390f0;
+}
+
+.tipo-inseto {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #a6b91a;
+}
+
+.tipo-voador {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #6bcae2;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+main .veja-mais {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 4px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main .veja-mais:hover {
+    background-color: rgb(243, 243, 153);
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #85c7b749;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    color: #212121;
+    margin-top: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #bdbdbd;
+    transform: scale(1.05);
+}
+
+footer .img-footer {
+    width: 30px;
+} 
